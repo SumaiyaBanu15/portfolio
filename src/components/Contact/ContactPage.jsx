@@ -1,12 +1,28 @@
-import React from 'react';
+import React, { useRef, useState } from 'react';
 import './styles.css';
 import PageHeaders from '../../common/pageHeader/PageHeaders';
 import { BsInfoCircleFill } from 'react-icons/bs';
 import { Animate } from 'react-simple-animate';
 import { AiFillGithub, AiFillLinkedin } from 'react-icons/ai';
+import emailjs from "emailjs-com";
 
 
 function ContactPage() {
+
+  const form = useRef();
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm('service_65jn9hb', 'template_ys84u9s', form.current, 'j7rnxtLY4tNXRuQH8')
+    .then((result) =>{
+      console.log(result.text);
+      window.alert("Your message has been sent successfully!")
+    }, (error) => {
+      console.log(error.text)
+    });
+
+    e.target.reset();
+  }
   return <>
     <section id="contact" className="contact">
     <PageHeaders 
@@ -35,19 +51,20 @@ function ContactPage() {
         transform: "translateX(0px)"
       }} >
         <div className="contact_form">
+          <form ref={form} onSubmit={sendEmail}>
           <div className='form_container'>
           <div>
-            <input type="text" name='name' className='inputname' required/>
+            <input type="text" name='from_name' className='inputname' required/>
             <label htmlFor='name' className='nameLabel'>Name</label>
           </div>
 
           <div>
-          <input type="email" name='email' className='inputemail' required/>
+          <input type="email" name='from_email' className='inputemail' required/>
             <label htmlFor='email' className='emailLabel'>Email</label>
           </div>
 
           <div>
-          <textarea name='textarea' className='inputarea' required></textarea>
+          <textarea name='message' className='inputarea' required></textarea>
             <label htmlFor='textarea' className='textLabel'>Comments</label>
           </div>
         
@@ -63,11 +80,13 @@ function ContactPage() {
           </a>
           </div>
         </div>
+        </form>
         </div>
       </Animate>
       
     </div>
   </section>
+
   </> 
 }
 
