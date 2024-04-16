@@ -13,7 +13,7 @@ function EducationPage() {
     <section id="education" className="education">
     <PageHeaders 
     headerText = "Education"
-    icon = {<BsInfoCircleFill size={30}/>} />
+    icon = {<BsInfoCircleFill size={20}/>} />
 
     <div className="timeline">
       <div className="timeline_certification">
@@ -30,7 +30,7 @@ function EducationPage() {
                   color: "var(--textColor)",
                   border: '1.5px solid var(--mainColor)'
                 }}
-                icon={ <FaBook />}
+                icon={ <FaBook  size={20}/>}
                 iconStyle={{
                   background: 'var(--navBgColor)',
                   color:'var(--mainColor)'
@@ -44,9 +44,9 @@ function EducationPage() {
                       {item.institution}
                     </h4>
                   </div>
-                  <p style={{fontSize:'16px'}}>{item.desription}
+                  <p style={{fontSize:'11px'}}>{item.desription}
                   </p>
-                  <p style={{fontSize:'15px'}}>{item.time}</p>
+                  <p style={{fontSize:'10px'}}>{item.time}</p>
 
                 </VerticalTimelineElement>
 
@@ -83,9 +83,9 @@ function EducationPage() {
                       {item.institution}
                     </h4>
                   </div>
-                  <p style={{fontSize:'16px'}}>{item.desription}
+                  <p style={{fontSize:'11px'}}>{item.desription}
                     </p>
-                    <p style={{fontSize:'15px'}}>{item.time}</p>
+                    <p style={{fontSize:'10px'}}>{item.time}</p>
 
                 </VerticalTimelineElement>
 

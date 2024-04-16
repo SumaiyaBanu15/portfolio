@@ -11,7 +11,7 @@ function SkillsPage() {
     <section id="skills" className="skills">
     <PageHeaders 
     headerText = "My Skills"
-    icon = {<BsInfoCircleFill size={30}/>} />
+    icon = {<BsInfoCircleFill size={20}/>} />
 
     <div className="skills_content">
       {

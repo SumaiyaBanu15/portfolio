@@ -12,7 +12,7 @@
 .skills_h3{
     display: inline-block;
     color: var(--textColor);
-    font-size: 20px;
+    font-size: 16px;
     font-weight: 700;
     line-height: 1rem;
     letter-spacing: 0.5px;
@@ -40,13 +40,13 @@
     width: 100%;
 }
 .skills_progressbar{
-    padding: 50px 0px 0px opx;
-    width: 430px;
+    padding: 40px 0px 0px opx;
+    width: 280px;
 }
 .skills_progressbar p{
-    font-size: 1.5rem;
-    margin-top: 30px;
-    margin-bottom: 10px;
+    font-size: 1.2rem;
+    margin-top: 20px;
+    margin-bottom: 8px;
     font-weight: 500;
     text-transform: uppercase;
     color: var(--textColor);

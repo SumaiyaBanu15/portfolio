@@ -3,7 +3,7 @@
     gap: 20px;
     padding: 20px;
     width: 100%;
-
+    overflow-y: hidden;
 }
 
 .about_content_personal, .about_content_skills{
@@ -11,8 +11,8 @@
 } 
 .about_content_personal p{
     color: var(--textColor);
-    font-size: 2.3rem;
-    line-height: 1.4;
+    font-size: 1.5rem;
+    line-height: 1;
     padding-bottom: 20px;
     border-bottom: 1px dashed var(--mainColor);
 }
@@ -20,26 +20,26 @@
 .about_content_personal h3{
     padding-top: 20px;
     margin-bottom: 10px;
-    font-size: 3rem;
+    font-size: 2rem;
     font-weight: 700;
     color: var(--mainColor);
 }
 .about_content_personal ul > li{
-    line-height: 1rem;
-    margin-bottom: 15px;
+    line-height: 0.8rem;
+    margin-bottom: 10px;
     margin-top: 25px;
     list-style: none;
     
 }
 .about_content_personal ul > li span.title, span.value {
-    font-size: 18px;
+    font-size: 15px;
     font-weight: 600;
     letter-spacing: 0.5px;
     border-bottom: 2px solid var(--mainColor);
     position: relative;
     display: inline-block;
     margin-right: 16px;
-    padding-bottom: 5px;
+    padding-bottom: 3px;
     color: var(--textColor);
 }
 .about_content_personal ul > li span.value{
@@ -53,8 +53,8 @@
 }
 
 .iconCircle{
-    width: 350px;
-    height: 350px;
+    width: 220px;
+    height: 220px;
     background: radial-gradient(180px, var(--mainColor), transparent 90%);
     position: relative;
     border-radius: 50%;
@@ -74,7 +74,7 @@
 .iconCircle div:nth-child(3){
     position: absolute;
     top: 75%;
-    left: 83%;
+    left: 78%;
 }
 .iconCircle div:nth-child(4){
     position: absolute;
@@ -117,8 +117,8 @@
    }
 
    .iconCircle{
-    width: 250px;
-    height: 250px;
+    width: 180px;
+    height: 180px;
     background: radial-gradient(100px, var(--mainColor), transparent 120%) ;
 
 }

@@ -1,0 +1,107 @@
+.contact_content{
+    padding: 20px;
+}
+.contact_h3{
+    color: var(--textColor);
+    display: inline-block;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1em;
+    letter-spacing: 0.5px;
+    position: relative;
+    text-transform: uppercase;
+    padding: 5px 10px;
+    border-bottom: 2px solid var(--mainColor);
+}
+
+.contact_h3::before, .contact_h3::after{
+    position: absolute;
+    content: '';
+    width: 2px;
+    height: 5px;
+    background-color: var(--mainColor);
+    bottom: -1px;
+}
+.contact_h3::before{
+    left: 0;
+}
+.contact_h3::after{
+    right: 0;
+}
+
+.contact_form{
+    margin-top: 30px;
+}
+.form_container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    margin-bottom: 30px;
+}
+.form_container div{
+    position: relative;
+}
+.form_container div .inputname, .inputemail, .inputarea{
+   width: 100%;
+   border: 2px solid var(--mainColor);
+   padding: 16px 12px;
+   transition: all 0.5s ease;
+   position: relative;
+   background-color: transparent;
+   color: var(--textColor);
+}
+.nameLabel, .emailLabel, .textLabel{
+    font-weight: 500;
+    position: absolute;
+    top: 7px;
+    left: 12px;
+    transition: all 0.2s ease;
+    color: var(--textColor);
+    font-size: 14px;
+}
+.inputname:focus, .inputemail:focus, .inputarea:focus{
+    outline: none;
+}
+
+.inputname:focus + .nameLabel,
+.inputname:valid + .nameLabel,
+.inputemail:focus + .emailLabel,
+.inputemail:valid + .emailLabel,
+.inputarea:focus + .textLabel,
+.inputarea:valid + .textLabel
+{
+    font-size: 16px;
+    top: -29px;
+    left: 0px;
+    margin-top: 10px;
+}
+
+button{
+    cursor: pointer;
+    padding: 10px 50px;
+    font-size: 1.5rem;
+    background: transparent;
+    color: var(--mainColor);
+    border: 1.5px solid var(--mainColor);
+    border-radius: 4px;
+    font-weight: 500;
+}
+button:hover{
+    color: var(--blackClr);
+    background-color: var(--mainColor);
+}
+.icon_link{
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Media Query */
+@media only screen and (max-width : 768px){
+    .contact_form{
+        text-align: center;
+    }
+    .form_container{
+        grid-template-columns: repeat(1, 1fr);
+
+    }
+}

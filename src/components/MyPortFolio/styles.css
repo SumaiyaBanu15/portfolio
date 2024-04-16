@@ -1,0 +1,124 @@
+.portfolio_content{
+    padding: 20px;
+    width: 100%;
+}
+.portfolio_filter{
+    display: inline-block;
+    margin: 0 auto;
+    border-radius: 25px;
+    border: 1px dashed var(--mainColor);
+}
+.portfolio_filter li{
+    font-size: 12px;
+    display: inline-block;
+    cursor: pointer;
+    position: relative;
+    color: var(--mainColor);
+    text-transform: uppercase;
+    padding: 10px 20px;
+    overflow: hidden;
+    transition: all 0.5s ease;
+}  
+.portfolio_filter li.active{
+    background: var(--mainColor);
+    color: var(--textColor);
+    font-weight: 600;
+    border-radius: 25px;
+}
+.portfolio_cards{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: auto;
+    gap: 1rem;
+    margin-top: 10px;
+}
+.cards_item{
+    height: 200px;
+    cursor: pointer;
+    position: relative;
+}
+.cards_img, a{
+    height: 100%;
+}
+.cards_img img{
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
+}
+
+.cards_overlay{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: 0.5s ease;
+    background-color: var(--mainColor);
+}
+.cards_overlay:hover{
+    opacity: 1;
+} 
+.cards_overlay div{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.cards_overlay p{
+    color: var(--blackClr);
+    margin: 0px;
+    font-size: 2.5rem;
+    position: relative;
+    overflow: hidden;
+    white-space: nowrap;
+    animation: typingEffect 1s steps(30, end);
+}
+.cards_overlay button{
+    cursor: pointer;
+    margin-top: 16px;
+    padding: 8px 50px;
+    font-size: 1.5rem;
+    background: transparent;
+    color: var(--blackClr);
+    border: 1.5px solid var(--blackClr);
+    border-radius: 4px;
+    font-weight: 500;
+}
+.cards_overlay button:hover{
+    background-color: var(--textColor);
+}
+
+@keyframes typingEffect{
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+/* Media Query */
+@media only screen and (max-width: 480px){
+    .portfolio_filter li{
+        font-size: 11px;
+    }
+    .portfolio_cards{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media only screen and (min-width: 481px) and (max-width : 767px){
+    .portfolio_filter li{
+        font-size: 14px;
+    }
+    .portfolio_cards{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .cards_overlay div, .cards_overlay p{
+        font-size: 2.5rem;
+    }
+}

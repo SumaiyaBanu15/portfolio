@@ -34,7 +34,7 @@ function AboutPage() {
   <section id="about" className="about">
     <PageHeaders 
     headerText = "About Me"
-    icon = {<BsInfoCircleFill size={30}/>} />
+    icon = {<BsInfoCircleFill size={20}/>} />
 
     <div className='about_content'>
       <div className="about_content_personal">
@@ -86,11 +86,11 @@ function AboutPage() {
       }}>
       
         <div className="iconCircle">
-          <div> <FaReact size={50} color='var(--mainColor)'/> </div>
-          <div> <FaHtml5 size={50} color='var(--mainColor)'/> </div>
-          <div> <FaNodeJs size={50} color='var(--mainColor)'/> </div>
-          <div> <FaDatabase size={50} color='var(--mainColor)'/> </div>
-          <div> <SiBootstrap size={50} color='var(--mainColor)'/> </div>
+          <div> <FaReact size={40} color='var(--mainColor)'/> </div>
+          <div> <FaHtml5 size={40} color='var(--mainColor)'/> </div>
+          <div> <FaNodeJs size={40} color='var(--mainColor)'/> </div>
+          <div> <FaDatabase size={40} color='var(--mainColor)'/> </div>
+          <div> <SiBootstrap size={40} color='var(--mainColor)'/> </div>
         </div>
         </Animate>
       </div>

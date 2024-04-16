@@ -1,11 +1,11 @@
 .navbar{
     background-color: var(--navBgColor);
-    height: 80px;
+    height: 60px;
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 3rem;
-    font-weight: 700;
+    font-weight: 600;
     /* position: sticky; */
 }
 .navbar_container{
@@ -18,7 +18,7 @@
 }   
 .navbar_container_logo{
     color:var(--mainColor);
-    margin: 10px;
+    margin-top: 25px;
     padding-bottom: 10px;
     cursor: pointer;
 }
@@ -26,14 +26,12 @@
     display: flex;
     list-style: none;
     text-align: center;
-    /* background-color: var(--navBgColor); */
 }    
 
 .navbar_container_menu_list{
     line-height: 40px;
     margin-right: 1.5rem;
-    font-size: 1.6rem;
-    /* color: var(--textColor); */
+    font-size: 1.4rem;
 }
 .navbar_container_menu_list::after{
     content: '';
