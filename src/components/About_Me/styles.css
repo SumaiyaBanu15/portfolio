@@ -1,0 +1,125 @@
+.about_content{
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    width: 100%;
+
+}
+
+.about_content_personal, .about_content_skills{
+    width: 50%;
+} 
+.about_content_personal p{
+    color: var(--textColor);
+    font-size: 2.3rem;
+    line-height: 1.4;
+    padding-bottom: 20px;
+    border-bottom: 1px dashed var(--mainColor);
+}
+
+.about_content_personal h3{
+    padding-top: 20px;
+    margin-bottom: 10px;
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--mainColor);
+}
+.about_content_personal ul > li{
+    line-height: 1rem;
+    margin-bottom: 15px;
+    margin-top: 25px;
+    list-style: none;
+    
+}
+.about_content_personal ul > li span.title, span.value {
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    border-bottom: 2px solid var(--mainColor);
+    position: relative;
+    display: inline-block;
+    margin-right: 16px;
+    padding-bottom: 5px;
+    color: var(--textColor);
+}
+.about_content_personal ul > li span.value{
+    border: none;
+}
+
+.about_content_skills{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.iconCircle{
+    width: 350px;
+    height: 350px;
+    background: radial-gradient(180px, var(--mainColor), transparent 90%);
+    position: relative;
+    border-radius: 50%;
+    border: 1.5px solid var(--mainColor);
+    animation: rotation 10s linear 1s infinite;
+}
+.iconCircle div:nth-child(1){
+    position: absolute;
+    top: -7.3%;
+    left: 31%;
+}
+.iconCircle div:nth-child(2){
+    position: absolute;
+    right: 0%;
+    top: 12%;
+}
+.iconCircle div:nth-child(3){
+    position: absolute;
+    top: 75%;
+    left: 83%;
+}
+.iconCircle div:nth-child(4){
+    position: absolute;
+    left: 20%;
+    top: 85%;
+}
+.iconCircle div:nth-child(5){
+    position: absolute;
+    top: 35%;
+    left: -5.5%;
+}
+
+@keyframes rotation {
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+/* Media Query */
+
+@media only screen and (max-width : 768px){
+   .about_content{
+    flex-direction: column;
+   }
+   .about_content_personal p{
+    font-size: 1.8rem;
+   }
+   .about_content_personal h3{
+    font-size: 2.8rem;
+   }
+   .about_content_personal ul > li {
+    font-size: 14px;
+   }
+   .about_content_personal,.about_content_skills{
+    width:  100%;
+   }
+
+   .about_content_skills{
+    margin: 10px 0px;
+   }
+
+   .iconCircle{
+    width: 250px;
+    height: 250px;
+    background: radial-gradient(100px, var(--mainColor), transparent 120%) ;
+
+}
+}
