@@ -9,7 +9,7 @@ import EducationPage from '../components/Education/EducationPage';
 import SkillsPage from '../components/Skills/SkillsPage';
 import PortFolioPage from '../components/MyPortFolio/PortFolioPage';
 import { loadFull } from 'tsparticles';
-import { render } from '@testing-library/react';
+// import { render } from '@testing-library/react';
 
 function AppRoutes() {
 

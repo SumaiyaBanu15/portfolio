@@ -9,6 +9,7 @@ import { loadSlim } from "@tsparticles/slim"; // if you are going to use `loadSl
 
 const ParticlesComponent = (props) => {
 
+  // eslint-disable-next-line no-unused-vars
   const [init, setInit] = useState(false);
   // this should be run only once per application lifetime
   useEffect(() => {

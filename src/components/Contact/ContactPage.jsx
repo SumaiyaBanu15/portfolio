@@ -1,4 +1,4 @@
-import React, { useRef, useState } from 'react';
+import React, { useRef } from 'react';
 import './styles.css';
 import PageHeaders from '../../common/pageHeader/PageHeaders';
 import { BsInfoCircleFill } from 'react-icons/bs';
