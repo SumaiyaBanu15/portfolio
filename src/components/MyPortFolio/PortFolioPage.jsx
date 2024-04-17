@@ -99,6 +99,7 @@ function PortFolioPage() {
             onMouseEnter={() => handleHover(i)}
             onMouseLeave={() => handleHover(null)} >
               <div className='cards_img'>
+                {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                 <a>
                   <img src={item.image} alt='Project Img'/>
                 </a>
