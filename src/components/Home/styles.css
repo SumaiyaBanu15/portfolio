@@ -24,6 +24,12 @@
 .home_contact-btn{
     display: flex;
     justify-content: center;
+    gap: 15px;
+    
+}
+.linkButton a{
+    text-decoration: none;
+    color: var(--mainColor);
 }
 .home_contact-btn button{
     cursor: pointer;
@@ -36,7 +42,7 @@
     border-radius: 4px;
     font-weight: 500;
 }
-.home_contact-btn button:hover{
+.home_contact-btn button:hover a{
     background-color: var(--mainColor);
     color: var(--blackClr);
 }

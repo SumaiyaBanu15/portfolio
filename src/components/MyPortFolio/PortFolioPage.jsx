@@ -13,31 +13,38 @@ const portfolioData = [
         id: 2,
         name: "Airbnb Clone",
         image: AirbnbImg ,
-        link: 'https://zingy-puppy-191dc4.netlify.app'
+        link: 'https://zingy-puppy-191dc4.netlify.app',
+        code: "https://github.com/SumaiyaBanu15/airbnb-frontend",
+      
     },
     {
         id: 2,
         name: "Blog App",
         image:  BlogImg,
-        link: 'https://keen-speculoos-9848ac.netlify.app'
+        link: 'https://keen-speculoos-9848ac.netlify.app',
+        code: "https://github.com/SumaiyaBanu15/blog-app-frontend"
+      
     },
     {
         id: 2,
         name: "Password Reset Flow",
         image:  PswdImg,
-        link: 'https://luminous-dolphin-1bd766.netlify.app'
+        link: 'https://luminous-dolphin-1bd766.netlify.app',
+        code: "https://github.com/SumaiyaBanu15/password-reset-flow-frontend"
     },
     {
         id: 3,
         name: "Travel Landing Page",
         image: TravelImg,
-        link: 'https://hilarious-puffpuff-9a2e53.netlify.app' 
+        link: 'https://hilarious-puffpuff-9a2e53.netlify.app',
+        code: "https://github.com/SumaiyaBanu15/CSS-Project" 
     },
     {
         id: 3,
         name: "Food Order Page",
         image: FoodImg,
-        link: 'https://ubiquitous-malabi-51b99a.netlify.app'
+        link: 'https://ubiquitous-malabi-51b99a.netlify.app',
+        code: "https://github.com/SumaiyaBanu15/BootStrap-Project"
     },
 ];
 
@@ -74,7 +81,10 @@ function PortFolioPage() {
   const handleVisitLink = (link) => {
     window.open(link, '_blank');
   }
-
+  
+  const handleSrcCode = (code) => {
+    window.open(code, "_blank")
+  }
   return <>
     <section id="portfolio" className="portfolio">
     <PageHeaders 
@@ -110,6 +120,7 @@ function PortFolioPage() {
                     <div>
                       <p>{item.name}</p>
                       <button onClick={()=> handleVisitLink(item.link)}>Visit</button>
+                      <button onClick={()=> handleSrcCode(item.code)}>Code</button>
                     </div>
                   )
                 }

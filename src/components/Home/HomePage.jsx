@@ -21,7 +21,10 @@ function HomePage() {
   <Animate play duration={1.5}
   delay={1} start={{transform: 'translateY(550px'}} end={{transform: 'translateX(0px)'}}>
     <div className="home_contact-btn">
-      <button onClick={handleContact}>Hire Me</button>
+      <button onClick={handleContact}>Hire Me</button> 
+      
+      <button className='linkButton'><a href='https://drive.google.com/file/d/11wuh1AWAuQn-LH9SEVvPNgV14nsS5Izd/view' target='_blank' rel="noreferrer" > Resume </a></button>
+    
     </div>
   </Animate>
   </section>

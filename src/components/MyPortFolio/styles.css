@@ -80,7 +80,7 @@
 .cards_overlay button{
     cursor: pointer;
     margin-top: 16px;
-    padding: 8px 50px;
+    padding: 8px 45px;
     font-size: 1.5rem;
     background: transparent;
     color: var(--blackClr);
