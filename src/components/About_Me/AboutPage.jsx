@@ -12,10 +12,6 @@ const personalDetails = [
     value : ": Sumaiya Banu"
   },
   {
-    label : "DOB",
-    value : ": 15th August 1997"
-  },
-  {
     label : "Email",
     value : ": sumaiyanishar115@gmail.com"
   },
