@@ -7,6 +7,7 @@ import BlogImg from '../../assets/LapImg.jpg';
 import PswdImg from '../../assets/PswImg.png';
 import FoodImg from '../../assets/FoodImg.jpeg';
 import TravelImg from '../../assets/travelImg.jpg';
+import ChatAppImg from '../../assets/ChatImg.png';
 
 const portfolioData = [
     {
@@ -17,6 +18,14 @@ const portfolioData = [
         code: "https://github.com/SumaiyaBanu15/airbnb-frontend",
       
     },
+    {
+      id: 2,
+      name: "Chat-APP",
+      image: ChatAppImg,
+      link: 'https://resilient-squirrel-7496d9.netlify.app',
+      code: "https://github.com/SumaiyaBanu15/chat_app_socketio_frontend",
+    
+  },
     {
         id: 2,
         name: "Blog App",
