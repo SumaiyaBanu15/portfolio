@@ -23,7 +23,7 @@ function HomePage() {
     <div className="home_contact-btn">
       <button onClick={handleContact}>Hire Me</button> 
       
-      <button className='linkButton'><a href='https://drive.google.com/file/d/1phsFBVGc7psXbz-E_Ag9IHJYhBd_Hm0d/view' target='_blank' rel="noreferrer" > Resume </a></button>
+      <button className='linkButton'><a href='https://drive.google.com/file/d/1oFEgiCGOlSzUBKDafny2Cn0Xrmy3Gkbh/view' target='_blank' rel="noreferrer" > Resume </a></button>
     
     </div>
   </Animate>
