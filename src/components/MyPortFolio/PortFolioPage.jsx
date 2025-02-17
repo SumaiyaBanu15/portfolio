@@ -12,6 +12,8 @@ import HeartImg from "../../assets/HeartImg.png";
 import DiceImg from "../../assets/DiceGameImg.jpeg";
 import ColorGetterImg from "../../assets/ColorGetterImg.jpeg";
 import TodoListImg from "../../assets/TodoListImg.jpeg";
+import ExpensesImg from "../../assets/expenseImg.jpeg";
+import QuizImg from "../../assets/quizImg.jpeg";
 
 const portfolioData = [
   {
@@ -43,6 +45,13 @@ const portfolioData = [
     code: "https://github.com/SumaiyaBanu15/password-reset-flow-frontend",
   },
   {
+    id: 2,
+    name: "Expenses Tracker App",
+    image: ExpensesImg,
+    link: "https://expensestrackerfrontend.netlify.app",
+    code: "https://github.com/SumaiyaBanu15/expenses_tracker_frontend",
+  },
+  {
     id: 3,
     name: "Travel Landing Page",
     image: TravelImg,
@@ -55,6 +64,13 @@ const portfolioData = [
     image: FoodImg,
     link: "https://ubiquitous-malabi-51b99a.netlify.app",
     code: "https://github.com/SumaiyaBanu15/BootStrap-Project",
+  },
+  {
+    id: 4,
+    name: "Quiz Application",
+    image: QuizImg,
+    link: "https://glistening-marigold-7803c2.netlify.app",
+    code: "https://github.com/SumaiyaBanu15/quiz_app",
   },
   {
     id: 4,
